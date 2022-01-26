@@ -8,6 +8,6 @@ setup(
     author_email = 'rick@rickkauffman.com',
     url = 'https://github.com/xod442/pypheus',
     download_url = 'https://github.com/xod442/pypheus.git',
-    keywords = ['morpheus', 'api', 'automation'],
+    keywords = ['morpheus', 'api', 'python'],
     classifiers = [],
 )

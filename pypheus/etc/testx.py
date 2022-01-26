@@ -16,7 +16,7 @@ import requests
 host='10.132.0.153'
 username='xod442'
 password='ilike2Rock@'
-
+'''
 nets = Network(host,username,password)
 info = nets.get_all_networks()
 print(info)
@@ -34,15 +34,19 @@ print(info)
 info = monitor.get_all_alerts()
 print(info)
 info = monitor.get_all_contacts()
-print(info)
+print(info['storageVolumes'])
 
-
+'''
 storage = Storage(host,username,password)
 info = storage.get_all_volumes()
-print(info)
+for v in info['storageVolumes']:
+    print('===========================================')
+    print(v)
+'''
 info = storage.get_all_buckets()
 print(info)
 info = storage.get_all_servers()
 print(info)
 info = storage.get_all_server_types()
 print(info)
+'''
