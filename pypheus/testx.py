@@ -8,6 +8,7 @@ This is a test file that tests the API
 import urllib3
 urllib3.disable_warnings()
 from network import Network
+from storage import Storage
 from monitoring import Monitoring
 import json
 import requests
@@ -33,4 +34,15 @@ print(info)
 info = monitor.get_all_alerts()
 print(info)
 info = monitor.get_all_contacts()
+print(info)
+
+
+storage = Storage(host,username,password)
+info = storage.get_all_volumes()
+print(info)
+info = storage.get_all_buckets()
+print(info)
+info = storage.get_all_servers()
+print(info)
+info = storage.get_all_server_types()
 print(info)
